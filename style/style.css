@@ -1,0 +1,64 @@
+/* alphabetical order? */
+
+/* Elements */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minimax(200px, 1fr));
+}
+
+.logo {
+  margin-inline-start: auto;
+}
+
+body {
+  background: #ECEFF1;
+}
+
+nav {
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  border: dashed 2px #78909C;
+}
+nav > * {
+  border: 0;
+  text-decoration: none;
+  background: #CFD8DC;
+  font: 14px/1 sans-serif;
+  color: black;
+  padding: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+nav > *:not(:last-child) {
+  margin-inline-end: 10px;
+}
+
+/* Classes */
+.case-study {
+  /* make these hideable */
+}
+
+.grid {
+  display: grid;
+}
+
+.grid__item {
+  /* on hover, red line + change font color + make case study button div appear */
+}
+
+.header__wrapper {
+
+}
+
+.header__text {
+
+}
+
+.header__title {
+
+}
+
+.tabs {
+  display: flex;
+}
