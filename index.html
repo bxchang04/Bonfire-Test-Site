@@ -7,26 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bonfire Test Site by Benjamin X. Chang</title>
-    <link rel="shortcut icon" href="assets/img/bxc_favicon.png" type='image/x-icon'> <!-- ADD THIS and optimize -->
+    <link rel="shortcut icon" href="./assets/img/bxc_favicon.png" type='image/x-icon'> <!-- ADD THIS and optimize -->
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- add Sass -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"> <!-- add Sass -->
   </head>
 
   <body>
 
     <!-- header -->
     <header class="header__wrapper">
+    
+    <!-- test nav -->
+		<!-- <div class="menu_container">
+			<div class="menu_item">
+				<p>Logo</p>
+			</div>
+			<div class="menu_item">
+				<nav>
+					<ul>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="./about.html">About</a>
+						</li>
+						<li>
+							<a href="#">Services</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+    </div> -->
+    <!-- end test nav -->
 
       <!-- nav -->
       <nav>
-        <ul role="menubar">
-          <li role="presentation">
-            <img class="logo" href="#" role="menuitem" alt="LOGODESIGN"/>
+        <ul class="menu" role="menubar">
+          <li class="logo" role="presentation">
+            <img src="assets/img/logo.png" role="menuitem" alt="LOGODESIGN"/>
           </li>
-          <li role="presentation">
+          <li class="item" role="presentation">
             <a href="#" role="menuitem">Home</a>
           </li>
-          <li role="presentation">
+          <li class="item" role="presentation">
             <a href="#" role="menuitem">Away</a>
           </li>
         </ul>
@@ -38,46 +64,49 @@
 
     <!-- main content -->
     <main>
-      <form class="tabs">
-        <button type=radio>SHOW ALL</button>
-        <button type=radio>SHOW EVEN</button>
-        <button type=radio>SHOW ODD</button>
+      <form class="displayTabs" id="displayTabs">
+        <input type=radio name="toggleBoxes" value="all">
+        <label for="showAll">SHOW ALL</label>
+        <input type=radio name="toggleBoxes" value="even">
+        <label for="showEven">SHOW EVEN</label>
+        <input type=radio name="toggleBoxes" value="odd">
+        <label for="showOdd">SHOW ODD</label>
       </form>
       <section class="boxes">
         <div class="grid">
 
-          <!-- Grid items live here -->
-          <div class="grid__item">
+          <!-- grid items live here -->
+          <div id="grid__box1" class="grid__item">
             <h2>BOX NUMBER 1</h2>
             <p> USELESS SUBTEXT </p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
 
-          <div class="grid__item">
+          <div id="grid__box2" class="grid__item">
             <h2>BOX NUMBER 2</h2>
             <p> USELESS SUBTEXT </p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
 
-          <div class="grid__item">
+          <div id="grid__box3" class="grid__item">
             <h2>BOX NUMBER 3</h2>
             <p> USELESS SUBTEXT </p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
 
-          <div class="grid__item">
+          <div id="grid__box4" class="grid__item">
             <h2>BOX NUMBER 4</h2>
             <p> USELESS SUBTEXT </p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
 
-          <div class="grid__item">
+          <div id="grid__box5" class="grid__item">
             <h2>BOX NUMBER 5</h2>
             <p> USELESS SUBTEXT </p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
-          
-          <div class="grid__item">
+
+          <div id="grid__box6" class="grid__item">
             <h2>BOX NUMBER 6</h2>
             <p> USELESS SUBTEXT </p>
             <div class="case-study">VIEW THE CASE STUDY</div>
@@ -88,6 +117,7 @@
     </main> <!-- end main content -->
 
     <!-- JS -->
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/tota11y.min.js"></script> <!-- end JS -->
   </body>
 </html>
