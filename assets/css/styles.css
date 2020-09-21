@@ -1,45 +1,3 @@
-/* alphabetical order? */
-
-/* test nav CSS */
-/*
-a {
-	text-decoration: none;
-}
-
-li {
-	list-style-type: none;
-}
-
-.menu_container {
-	display: flex;
-	padding: 20px;
-	background-color: #1c1808;
-	font-family: cursive;
-	font-weight: 300;
-	color: white;
-}
-
-.menu_item {
-	flex: 1;
-}
-
-.menu_container .menu_item nav ul {
-	display: flex;
-}
-
-.menu_container .menu_item nav ul li a {
-	color: white;
-	padding: 21px 37px;
-	border-radius: 3px;
-}
-
-.menu_container .menu_item nav ul li a:hover {
-	background-color: #becccf;
-	color: #1c1808;
-}
-*/
-
-/* Not working!!! */
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minimax(200px, 1fr));
@@ -67,12 +25,11 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /*add 1 more fr as needed*/
   grid-gap: 20px;
 }
 
 .grid__item {
-	/* on hover, red line + change font color + make case study button div appear */
+	/* add on hover, red line + change font color + make case study button div appear */
   background-color: LightGrey;
   padding: 10px;
   /* Set width to auto*/
@@ -81,7 +38,7 @@ body {
 
 
  .header__wrapper {
-
+	background-image: ;
 }
 
 .header__text {

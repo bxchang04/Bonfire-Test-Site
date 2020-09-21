@@ -2,14 +2,13 @@
 display = "all";
 
 // Get list of radio buttons with name 'toggleBoxDisplay'
-let tb = document.forms['displayTabs'].elements['toggleBoxes'];
+let toggleBoxes = document.forms['displayTabs'].elements['toggleBoxes']; 
 // Query selector to get all boxes
-let b = document.querySelectorAll(".grid__item");
+let gridItems = document.querySelectorAll(".grid__item");
 
 // Loop through all three displayTabs
-for (let i=0, len=tb.length; i<len; i++) {
-  // Assign onclick handler function to each -- !!! can this be converted to an arrow function?
-  tb[i].onclick = function(){
+for (let i = 0; i < toggleBoxes.length; i++) { 
+  toggleBoxes[i].onclick = function() {
     // Put clicked radio button's value in total field
     display = this.value;
     // Toggle boxes displayed based on the state the display variable
@@ -31,28 +30,30 @@ function toggleDisplay() {
       displayAllBoxes();
       removeEvenBoxes();
       break;
+      
+    default: 
+      break;
   }
 }
 
 displayAllBoxes = () => {
-  for (let i = 0, len = b.length; i < len; i++) {
-    // bug here
-    b[i].style.display = "grid";
+  for (let i = 0; i < gridItems.length; i++) {
+    gridItems[i].style.display = "grid";
   }
 }
 
 removeEvenBoxes = () => {
-  for (let i = 0, len = b.length; i < len; i++) {
+  for (let i = 0; i < gridItems.length; i++) {
     if (i % 2 === 1) {
-      b[i].style.display = "none";
+      gridItems[i].style.display = "none";
     }
   }
 }
 
 removeOddBoxes = () => {
-  for (let i = 0, len = b.length; i < len; i++) {
+  for (let i = 0; i < gridItems.length; i++) {
     if (i % 2 === 0) {
-      b[i].style.display = "none";
+      gridItems[i].style.display = "none";
     }
   }
 }
