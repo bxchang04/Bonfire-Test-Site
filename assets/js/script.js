@@ -38,7 +38,7 @@ function toggleDisplay() {
 
 displayAllBoxes = () => {
   for (let i = 0; i < gridItems.length; i++) {
-    gridItems[i].style.display = "grid";
+    gridItems[i].style.display = "block";
   }
 }
 

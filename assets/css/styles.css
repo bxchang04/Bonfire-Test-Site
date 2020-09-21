@@ -28,11 +28,23 @@ body {
   grid-gap: 20px;
 }
 
-.grid__item {
-	/* add on hover, red line + change font color + make case study button div appear */
+.grid__item--hidden {
+  /* display: none; */
+  visibility: hidden;
+}
+
+.grid__item--hidden:hover {
+  /* display: grid; */
+  visibility: visible;
+}
+
+.grid__item:hover, .grid__item:active {
+  /* add on hover, red line + change font color + make case study button div appear */
+  color: brown;
+  border-top: solid;
+  border-color: red;
   background-color: LightGrey;
   padding: 10px;
-  /* Set width to auto*/
   width: auto;
 }
 
