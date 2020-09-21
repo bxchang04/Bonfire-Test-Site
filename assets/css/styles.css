@@ -4,7 +4,7 @@ main {
 }
 
 body {
-	background: gray;
+	background: lightgray;
 }
 
 /* Classes */
@@ -16,26 +16,17 @@ body {
   padding: 50px;
 }
 
-/* Grid fallback*/
-.grid__item {
-  display: inline-block;
-  width: 50%;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  color: gray;
 }
 
-.grid__item--hidden {
-  /* display: none; */
-  visibility: hidden;
-}
-
-.grid__item--hidden:hover {
-  /* display: grid; */
-  visibility: visible;
+/* Grid fallback*/
+.grid__item {
+  display: inline-block;
+  width: 50%;
 }
 
 .grid__item:hover, .grid__item:active {
@@ -48,9 +39,22 @@ body {
   width: auto;
 }
 
+.grid__item .grid__text {
+  /* display: none; */
+  visibility: hidden;
+}
 
- .header__wrapper {
-	background-image: ;
+.grid__text {
+  color: darkslategray;
+}
+
+.grid__item:hover .grid__text, .grid__item:active .grid__text {
+  /* display: grid; */
+  visibility: visible;
+}
+
+ .header {
+	background-image: url("../img/header.png")
 }
 
 .header__text {

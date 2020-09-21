@@ -26,3 +26,5 @@ As a result, the user experieneces a more streamlined experience and fewer waste
     Test speed
     Cross site testing
     Check rest of CF notes to polish project
+
+    Make time lapse video of all major commits
