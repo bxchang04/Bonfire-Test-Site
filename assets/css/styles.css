@@ -37,12 +37,13 @@ li {
 	background-color: #becccf;
 	color: #1c1808;
 }
+*/
 
-
+/* Not working!!! */
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minimax(200px, 1fr));
-}*/
+}
 
 body {
 	background: gray;
@@ -53,14 +54,31 @@ body {
 	/* make these hideable */
 }
 
+.boxes {
+  padding: 50px;
+}
+
+/* Grid fallback*/
+.grid__item {
+  display: inline-block;
+  width: 50%;
+}
+
 .grid {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*add 1 more fr as needed*/
+  grid-gap: 20px;
 }
 
 .grid__item {
 	/* on hover, red line + change font color + make case study button div appear */
-	/* bug here on toggle */
+  background-color: LightGrey;
+  padding: 10px;
+  /* Set width to auto*/
+  width: auto;
 }
+
 
  .header__wrapper {
 

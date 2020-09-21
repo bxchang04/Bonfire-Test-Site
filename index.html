@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bonfire Test Site by Benjamin X. Chang</title>
-    <link rel="shortcut icon" href="./assets/img/bxc_favicon.png" type='image/x-icon'> <!-- ADD THIS and optimize -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/bxc_favicon.png"
+      type="image/x-icon"
+    />
+    <!-- ADD THIS and optimize -->
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"> <!-- add Sass -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <!-- add Sass -->
   </head>
 
   <body>
-
     <!-- header -->
     <header class="header__wrapper">
-    
-    <!-- test nav -->
-		<!-- <div class="menu_container">
+      <!-- test nav -->
+      <!-- <div class="menu_container">
 			<div class="menu_item">
 				<p>Logo</p>
 			</div>
@@ -41,13 +44,13 @@
 				</nav>
 			</div>
     </div> -->
-    <!-- end test nav -->
+      <!-- end test nav -->
 
       <!-- nav -->
       <nav>
         <ul class="menu" role="menubar">
           <li class="logo" role="presentation">
-            <img src="assets/img/logo.png" role="menuitem" alt="LOGODESIGN"/>
+            <img src="assets/img/logo.png" role="menuitem" alt="LOGODESIGN" />
           </li>
           <li class="item" role="presentation">
             <a href="#" role="menuitem">Home</a>
@@ -56,72 +59,77 @@
             <a href="#" role="menuitem">Away</a>
           </li>
         </ul>
-      </nav><!-- end nav -->
+      </nav>
+      <!-- end nav -->
 
       <h1 class="header__title">Why Hello There</h1>
-      <p class="header__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
-    </header><!-- end header -->
+      <p class="header__text">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et
+      </p>
+    </header>
+    <!-- end header -->
 
     <!-- main content -->
     <main>
       <form class="displayTabs" id="displayTabs">
-        <input type=radio name="toggleBoxes" value="all">
+        <input type="radio" name="toggleBoxes" value="all" />
         <label for="showAll">SHOW ALL</label>
-        <input type=radio name="toggleBoxes" value="even">
+        <input type="radio" name="toggleBoxes" value="even" />
         <label for="showEven">SHOW EVEN</label>
-        <input type=radio name="toggleBoxes" value="odd">
+        <input type="radio" name="toggleBoxes" value="odd" />
         <label for="showOdd">SHOW ODD</label>
       </form>
       <section class="boxes">
         <div class="grid">
-
           <!-- grid items live here -->
           <div id="grid__box1" class="grid__item">
             <h2>BOX NUMBER 1</h2>
-            <p> USELESS SUBTEXT </p>
+            <p>USELESS SUBTEXT</p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
 
           <div id="grid__box2" class="grid__item">
             <h2>BOX NUMBER 2</h2>
-            <p> USELESS SUBTEXT </p>
+            <p>USELESS SUBTEXT</p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
 
           <div id="grid__box3" class="grid__item">
             <h2>BOX NUMBER 3</h2>
-            <p> USELESS SUBTEXT </p>
+            <p>USELESS SUBTEXT</p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
 
           <div id="grid__box4" class="grid__item">
             <h2>BOX NUMBER 4</h2>
-            <p> USELESS SUBTEXT </p>
+            <p>USELESS SUBTEXT</p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
 
           <div id="grid__box5" class="grid__item">
             <h2>BOX NUMBER 5</h2>
-            <p> USELESS SUBTEXT </p>
+            <p>USELESS SUBTEXT</p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
 
           <div id="grid__box6" class="grid__item">
             <h2>BOX NUMBER 6</h2>
-            <p> USELESS SUBTEXT </p>
+            <p>USELESS SUBTEXT</p>
             <div class="case-study">VIEW THE CASE STUDY</div>
           </div>
-
         </div>
       </section>
-    </main> <!-- end main content -->
+    </main>
+    <!-- end main content -->
 
     <!-- JS -->
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/tota11y.min.js"></script> <!-- end JS -->
+    <script src="assets/js/tota11y.min.js"></script>
+    <!-- end JS -->
   </body>
 </html>
-
 
 <!-- 
     NOTES:
@@ -129,6 +137,7 @@
       Mouse over red line, focus, view case study button w/ href #
     Pay attention to link colors
     SASS!
+    CSS Grid and Grid fallback
     IE conflicts/compatability (autoprefixer)
     
     FONT!
@@ -144,32 +153,29 @@
     Cross site testing
     Check rest of CF
 
-    Why Hello There 
-    
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+/* Styling CSS grid*/
+/* Work Page */
+.work_section {
+  padding: 50px;
+}
 
-    Tabs
-      SHOW ALL
-      SHOW EVEN
-      SHOW ODD
-    
-    Boxes
-      BOX NUMBER 1
-        USELESS SUBTEXT
-      
-      BOX NUMBER 2
-        USELESS SUBTEXT
-      
-      BOX NUMBER 3
-        USELESS SUBTEXT
-      
-      BOX NUMBER 4
-        USELESS SUBTEXT
-      
-        BOX NUMBER 5
-        USELESS SUBTEXT
-          VIEW CASE STUDY (only on mouse over)
-      
-      BOX NUMBER 6
-        USELESS SUBTEXT 
+/* Grid fallback*/
+.grid__item {
+  display: inline-block;
+  width: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*add 1 more fr as needed*/
+  grid-gap: 20px;
+}
+
+.grid__item {
+  background-color: LightGrey;
+  padding: 10px;
+  /* Set width to auto*/
+  width: auto;
+}
       -->
