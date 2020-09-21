@@ -5,6 +5,7 @@ display = "all";
 let toggleBoxesDisplayed = () => {
   let tabs = document.forms["displayTabs"].elements["toggleBoxes"];
 
+
   for (let i = 0; i < tabs.length; i++) {
     tabs[i].onclick = function () {
       display = this.value;
@@ -42,13 +43,13 @@ function setDisplayState() {
 
 let boxes = document.querySelectorAll(".grid__item");
 
-displayAllBoxes = () => {
+const displayAllBoxes = () => {
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].style.display = "block";
   }
 }
 
-removeEvenBoxes = () => {
+const removeEvenBoxes = () => {
   for (let i = 0; i < boxes.length; i++) {
     if (i % 2 === 1) {
       boxes[i].style.display = "none";
@@ -56,7 +57,7 @@ removeEvenBoxes = () => {
   }
 }
 
-removeOddBoxes = () => {
+const removeOddBoxes = () => {
   for (let i = 0; i < boxes.length; i++) {
     if (i % 2 === 0) {
       boxes[i].style.display = "none";
