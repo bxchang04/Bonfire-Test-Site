@@ -71,6 +71,10 @@ a {
   .top__logo {
     margin-right: auto;
   }
+  /* new */
+  .nav__item:last-child {
+    margin-right: -2rem;
+  }
 }
 
 .nav__item {
@@ -78,6 +82,7 @@ a {
   padding: 1rem 1.75rem;
   color: var(--white);
 }
+
 .nav__item:hover {
   color: var(--tan);
 }
@@ -85,6 +90,7 @@ a {
   color: var(--tan);
 }
 
+/* new */
 .btn {
   background-color: var(--dark);
   color: var(--white);
@@ -93,6 +99,7 @@ a {
   font-size: 0.875rem;
   padding: 1.0625rem;
   transition: all 0.15s ease-in-out;
+  cursor: pointer;
 }
 
 .btn:not(.active):hover,
@@ -107,6 +114,7 @@ a {
   font-weight: 700;
 }
 
+/* new */
 .tabs {
   display: flex;
   justify-content: center;
@@ -126,10 +134,12 @@ a {
 .tabs .active {
   margin: -0.125rem 0;
 }
+/* new */
 .tabs-sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 3rem;
+  z-index: 1;
 }
 
 .container {

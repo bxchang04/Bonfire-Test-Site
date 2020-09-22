@@ -1,3 +1,11 @@
+/*
+
+Overview:
+
+This script file contains the logic for each of the 3 display tabs used to toggle which boxes are displayed. This logic also dynamically adjusts the styling of each tab based on whether they are active or not.
+
+ */
+
 // Set state of page
 display = "all";
 
@@ -9,12 +17,26 @@ let toggleBoxesDisplayed = () => {
   for (let i = 0; i < tabs.length; i++) {
     tabs[i].onclick = function () {
       display = this.value;
-      // Refresh page
+      // Filter buttons displayed
       setDisplayState();
+      // Update styling for all three tabs
+      updateTabStyling(tabs[i]);
     };
   }
   return;
 }
+
+// Define function to update all tabs' styling each time any tab is clicked
+let buttons = document.querySelectorAll(".btn");
+
+let updateTabStyling = (clickedTab) => {
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove('active');
+    if (buttons[i] === clickedTab)
+      console.log("current tab: ", buttons[i], "clicked tab: ", clickedTab);
+      buttons[i].classList.add('active');
+  }
+};
 
 // When a tab is clicked, call toggleBoxesDisplayed() to determine which boxes are displayed
 toggleBoxesDisplayed();
@@ -43,26 +65,24 @@ function setDisplayState() {
 
 let boxes = document.querySelectorAll(".box");
 
-const displayAllBoxes = () => {
+let displayAllBoxes = () => {
   for (let i = 0; i < boxes.length; i++) {
     boxes[i].style.display = "block";
   }
 }
 
-const removeEvenBoxes = () => {
+let removeEvenBoxes = () => {
   for (let i = 0; i < boxes.length; i++) {
     if (i % 2 === 1) {
       boxes[i].style.display = "none";
     }
   }
-}
+};
 
-const removeOddBoxes = () => {
+let removeOddBoxes = () => {
   for (let i = 0; i < boxes.length; i++) {
     if (i % 2 === 0) {
       boxes[i].style.display = "none";
     }
   }
-}
-
-  
+};
