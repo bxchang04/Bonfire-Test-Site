@@ -1,70 +1,24 @@
-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minimax(200px, 1fr));
-}
+/* Globals */
 
 body {
-	background: lightgray;
+  padding-bottom: 5rem;
+  margin: 0;
+  background: lightgray;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  /* font smoothing */
 }
 
-/* Classes */
-.case-study { 
-	/* make these hideable */
+a {
+  text-decoration: none;
+  color: tan
 }
 
-.boxes {
-  padding: 50px;
-}
+/* General */
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-  color: rgb(156, 156, 156);
-}
-
-/* Grid fallback*/
-.grid__item {
-  /* display: inline-block; */
-  /* width: 50%; */
-  background-color: white;
-  text-align: center;
-}
-
-.grid__item:hover, .grid__item:active {
-  /* add on hover, red line + change font color + make case study button div appear */
-  color: brown;
-  border-top: solid;
-  border-color: red;
-  background-color: white;
-  padding: 10px;
-  width: auto;
-}
-
-.grid__item .grid__text {
-  /* display: none; */
-  visibility: hidden;
-}
-
-.grid__text {
-  color: darkslategray;
-}
-
-.grid__item:hover .grid__text, .grid__item:active .grid__text {
-  /* display: grid; */
-  visibility: visible;
-}
-
- .header {
-	background-image: url("../img/header.png")
-}
-
-.header__text {
-
-}
-
-.header__title {
-
+.header {
+ background-image: url("../img/header.png")
 }
 
 .logo {
@@ -73,4 +27,49 @@ body {
 
 .tabs {
   display: flex;
+}
+
+.container {
+  max-width: 1134px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.boxes {
+  margin-top: 3.125rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2.375rem;
+  color: rgb(156, 156, 156);
+}
+
+.box {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+}
+
+.box__title {
+  text-transform: uppercase;
+}
+
+.box__subtitle {
+  text-transform: uppercase;
+  color: black;
+}
+
+.box__button {
+
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: .875rem;
+  padding: 1.0625rem;
+  transition: all .15s ease-in-out;
 }

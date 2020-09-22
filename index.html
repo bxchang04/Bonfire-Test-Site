@@ -45,70 +45,66 @@
     </header>
     <!-- end header -->
 
+    <form class="displayTabs" id="displayTabs">
+      <input type="radio" name="toggleBoxes" value="all" />
+      <label for="showAll">SHOW ALL</label>
+      <input type="radio" name="toggleBoxes" value="even" />
+      <label for="showEven">SHOW EVEN</label>
+      <input type="radio" name="toggleBoxes" value="odd" />
+      <label for="showOdd">SHOW ODD</label>
+    </form> 
+
     <!-- main content -->
-    <main>
-      <form class="displayTabs" id="displayTabs">
-        <input type="radio" name="toggleBoxes" value="all" />
-        <label for="showAll">SHOW ALL</label>
-        <input type="radio" name="toggleBoxes" value="even" />
-        <label for="showEven">SHOW EVEN</label>
-        <input type="radio" name="toggleBoxes" value="odd" />
-        <label for="showOdd">SHOW ODD</label>
-      </form> 
+    <main class="container">
       <section class="boxes">
-        <div class="grid">
-          <!-- grid items live here -->
-          <a href="#" id="grid__box1" class="grid__item">
-            <h2 class="grid__title">Box number 1</h2>
-            <p class="grid__subtitle">Useless subtext</p>
-            <div class="grid__text">
-              <div class="case-study">VIEW THE CASE STUDY</div>
-            </div>
-          </a>
-
-          <div id="grid__box2" class="grid__item">
-            <h2>BOX NUMBER 2</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="grid__text">
-              <div class="case-study">VIEW THE CASE STUDY</div>
-            </div>
+        <a href="#" id="box1" class="box">
+          <h2 class="box__title">Box number 1</h2>
+          <p class="box__subtitle">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
 
-          <div id="grid__box3" class="grid__item">
-            <h2>BOX NUMBER 3</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="grid__text">
-              <div class="case-study">VIEW THE CASE STUDY</div>
-            </div>
-
+        <a href="#" class="box">
+          <h2 class="box__title">Box number 2</h2>
+          <p class="box__subtitle">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
 
-          <div id="grid__box4" class="grid__item">
-            <h2>BOX NUMBER 4</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="grid__text">
-              <div class="case-study">VIEW THE CASE STUDY</div>
-            </div>
-
+        <a href="#" class="box">
+          <h2 class="box__title">Box number 3</h2>
+          <p class="box__subtitle">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
 
-          <div id="grid__box5" class="grid__item">
-            <h2>BOX NUMBER 5</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="grid__text">
-              <div class="case-study">VIEW THE CASE STUDY</div>
-            </div>
-
+        <a href="#" class="box">
+          <h2 class="box__title">Box number 4</h2>
+          <p class="box__subtitle">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
 
-          <div id="grid__box6" class="grid__item">
-            <h2>BOX NUMBER 6</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="grid__text">
-              <div class="case-study">VIEW THE CASE STUDY</div>
-            </div>
-
+        <a href="#" class="box">
+          <h2 class="box__title">Box number 5</h2>
+          <p class="box__subtitle">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
+        
+        <a href="#" id="box2" class="box">
+          <h2 class="box__title">Box number 6</h2>
+          <p class="box__subtitle">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
+          </div>
+        </a>
+
         </div>
       </section>
     </main>
