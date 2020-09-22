@@ -35,11 +35,71 @@ a {
 /* General */
 
 .header {
- background-image: url("../img/header.png")
+  background-image: url(../img/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: var(--white);
+  padding: 3.75rem 0 8.5rem;
+}
+.header__title {
+  text-align: center;
+  font-size: 2.75rem;
+  margin: 3rem 0 0.5rem;
+}
+.header__lead {
+  text-align: center;
+  font-size: 1.125rem;
+  margin: 0 auto;
+  max-width: 36rem;
 }
 
-.logo {
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .top {
+    flex-direction: row;
+  }
+  .top__logo {
     margin-right: auto;
+  }
+}
+
+.nav__item {
+  display: inline-block;
+  padding: 1rem 1.75rem;
+  color: var(--white);
+}
+.nav__item:hover {
+  color: var(--tan);
+}
+.nav .active {
+  color: var(--tan);
+}
+
+.btn {
+  background-color: var(--dark);
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1.0625rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn:not(.active):hover,
+.btn:not(.active):focus {
+  background-color: var(--darker);
+  cursor: pointer;
+}
+
+.btn.active {
+  background-color: var(--tan);
+  color: var(--darker);
+  font-weight: 700;
 }
 
 .tabs {
@@ -120,26 +180,4 @@ a {
 .box:hover .box__button,
 .box:focus .box__button {
   opacity: 1;
-}
-
-.btn {
-  background-color: var(--dark);
-  color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 0.875rem;
-  padding: 1.0625rem;
-  transition: all 0.15s ease-in-out;
-}
-
-.btn:not(.active):hover,
-.btn:not(.active):focus {
-  background-color: var(--darker);
-  cursor: pointer;
-}
-
-.btn.active {
-  background-color: var(--tan);
-  color: var(--darker);
-  font-weight: 700;
 }

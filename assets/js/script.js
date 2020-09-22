@@ -41,7 +41,7 @@ function setDisplayState() {
   }
 }
 
-let boxes = document.querySelectorAll(".grid__item");
+let boxes = document.querySelectorAll(".box");
 
 const displayAllBoxes = () => {
   for (let i = 0; i < boxes.length; i++) {

@@ -13,37 +13,29 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- add Sass -->
   </head>
 
   <body>
-    <!-- header -->
-    <header class="header">
-      <!-- nav -->
-      <nav>
-        <ul class="menu" role="menubar">
-          <li class="logo" role="presentation">
-            <img src="assets/img/logo.png" role="menuitem" alt="LOGODESIGN" />
-          </li>
-          <li class="item" role="presentation">
-            <a href="#" role="menuitem">Home</a>
-          </li>
-          <li class="item" role="presentation">
-            <a href="#" role="menuitem">Away</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- end nav -->
+		<!-- Begin: Header -->
+		<header class="header">
+			<div class="container">
+				<div class="top">
+					<a href="#" class="top__logo" title="Home"><img src="assets/img/logo.png" alt="Logo Design"/></a>
 
-      <h1 class="header__title">Why Hello There</h1>
-      <p class="header__text">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et
-      </p>
-    </header>
-    <!-- end header -->
+					<!-- Begin: Nav -->
+					<nav class="nav">
+						<a href="#" class="nav__item active">Home</a>
+						<a href="#" class="nav__item">Away</a>
+					</nav>
+					<!-- End: Nav -->
+				</div>
+				<h1 class="header__title">Why Hello There</h1>
+				<p class="header__lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
+			</div>
+		</header>
+		<!-- End: Header -->
 
     <form class="displayTabs" id="displayTabs">
       <input type="radio" name="toggleBoxes" value="all" />
@@ -54,7 +46,7 @@
       <label for="showOdd">SHOW ODD</label>
     </form> 
 
-    <!-- main content -->
+    <!-- Begin: Main Content -->
     <main class="container">
       <section class="boxes">
         <a href="#" id="box1" class="box">
@@ -108,11 +100,10 @@
         </div>
       </section>
     </main>
-    <!-- end main content -->
+    <!-- End: Main Content -->
 
-    <!-- JS -->
+    <!-- Begin: JS -->
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/tota11y.min.js"></script>
-    <!-- end JS -->
+    <!-- End: JS -->
   </body>
 </html>
