@@ -1,0 +1,28 @@
+.tabs{
+	display: flex;
+	justify-content: center;
+	z-index: 1;
+	transform: translateY(-50%);
+	
+	&__form{
+		display: inline-flex;
+		box-shadow: 0 0 2rem rgba(0,0,0,.1)
+	}
+	
+	@media (min-width:576px){
+		.btn{
+			padding-left: 3rem;
+			padding-right: 3rem
+		}
+	}
+	
+	.active{
+		margin: -.125rem 0;
+	}
+	
+	&-sticky{
+		position: sticky;
+		top: 3rem;
+		z-index: 1
+	}
+}

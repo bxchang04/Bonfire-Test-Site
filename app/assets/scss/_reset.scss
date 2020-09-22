@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box
+}
+
+body{
+	margin: 0;
+	font-family: helvetica, arial, sans-serif;
+	line-height: 1.5;
+	background-image: linear-gradient(var(--gray-lightest) 60%, var(--white));
+	min-height: 100vh;
+	padding-bottom: 5rem;
+	-webkit-font-smoothing: antialiased; /* Chrome, Safari */
+	-moz-osx-font-smoothing: grayscale; /* Firefox */
+}
+
+h1{
+	font-family: georgia, times, serif;
+}
+
+a{
+	color: var(--brown);
+	text-decoration: none
+}

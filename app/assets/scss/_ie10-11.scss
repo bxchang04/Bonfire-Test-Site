@@ -1,0 +1,18 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS styles go here */
+  /* Start: Grid Fallback */
+  header {
+    color: white;
+  }
+
+  .tabs {
+    background-color: white;
+  }
+
+  .box {
+    display: inline-block;
+    width: 33%;
+    color: gray;
+  }
+  /* End: Grid Fallback */
+}

@@ -1,0 +1,21 @@
+.btn{
+	background-color: var(--dark);
+	color: var(--white);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.875rem;
+	padding: 1.0625rem;
+	transition: all .15s ease-in-out;
+	
+	&:not(.active):hover,
+	&:not(.active):focus{
+		background-color: var(--darker);
+		cursor: pointer;
+	}
+	
+	&.active{
+		background-color: var(--tan);
+		color: var(--darker);
+		font-weight: 700;
+	}
+}
