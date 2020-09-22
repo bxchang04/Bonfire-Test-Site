@@ -1,5 +1,22 @@
 /* Globals */
 
+:root {
+  --white: #fff;
+  --gray-lightest: #eff1f5;
+  --gray: #aaaeb6;
+  --dark: #696579;
+  --darker: #52485d;
+  --tan: #fdecca;
+  --brown: #caa97d;
+  --danger: #d83a6a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   padding-bottom: 5rem;
   margin: 0;
@@ -30,46 +47,99 @@ a {
 }
 
 .container {
-  max-width: 1134px;
+  max-width: 70.875rem;
   padding: 0 2rem;
   margin: 0 auto;
 }
 
 .boxes {
-  margin-top: 3.125rem;
   display: grid;
+  margin-top: 3.125rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2.375rem;
   color: rgb(156, 156, 156);
 }
 
 .box {
-  padding: 1.75rem;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  padding: 1.75rem;
+  border-top: .1875rem solid transparent;
+  border-bottom: 0.125rem solid rgba(0,50,100,.13);
+  border-radius: .1875rem;
+  box-shadow: 0 0 .5rem rgba(0,0,0,.05);
+  background-color: var(--white);
   text-align: center;
+  transition: all .15s ease-in-out;
 }
 
 .box__title {
+  margin: 3rem 0 .875rem;
   text-transform: uppercase;
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 1.875rem;
+  transition: all .15s ease-in-out;
 }
 
-.box__subtitle {
+.box__subtext {
+  margin: 0 0 2.25rem;
+  font-size: .875rem;
+  letter-spacing: .0625em;
   text-transform: uppercase;
-  color: black;
+  color: var(--dark);
+  transition: all .15s ease-in-out;
 }
 
 .box__button {
+  margin: auto 0 0;
+  opacity: 0;
+  font-weight: 700;
+  transition: all .15s ease-in-out;
+}
 
+.box:hover,
+.box:focus {
+  border-top-color: var(--danger);
+  box-shadow: 0 0.25rem 1.75rem rgba(0, 50, 100, 0.15);
+  transform: translateY(-0.5rem);
+}
+
+.box:hover .box__title,
+.box:focus .box__title {
+  color: var(--brown);
+  transform: translateY(-2rem);
+}
+
+.box:hover .box__subtext,
+.box:focus .box__subtext {
+  color: var(--darker);
+  transform: translateY(-2rem);
+}
+
+.box:hover .box__button,
+.box:focus .box__button {
+  opacity: 1;
 }
 
 .btn {
-  background-color: black;
-  color: white;
+  background-color: var(--dark);
+  color: var(--white);
   text-transform: uppercase;
   text-align: center;
-  font-size: .875rem;
+  font-size: 0.875rem;
   padding: 1.0625rem;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn:not(.active):hover,
+.btn:not(.active):focus {
+  background-color: var(--darker);
+  cursor: pointer;
+}
+
+.btn.active {
+  background-color: var(--tan);
+  color: var(--darker);
+  font-weight: 700;
 }
