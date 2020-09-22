@@ -2,43 +2,53 @@
 
 Overview:
 
-This script file contains the logic for each of the 3 display tabs used to toggle which boxes are displayed. This logic also dynamically adjusts the styling of each tab based on whether they are active or not.
+This script file dynamically assigns one event handler each of the three display tabs. It also handles styling for the tabs themselves.
 
  */
 
 // Set state of page
+
 display = "all";
 
-// Define toggle function and assign it to the three tabs
+// Define and apply onclick event handler to the three tabs
+
 let toggleBoxesDisplayed = () => {
+  
   let tabs = document.forms["displayTabs"].elements["toggleBoxes"];
 
-
   for (let i = 0; i < tabs.length; i++) {
+    
     tabs[i].onclick = function () {
+    
       display = this.value;
       // Filter buttons displayed
       setDisplayState();
       // Update styling for all three tabs
-      updateTabStyling(tabs[i]);
+      updateTabStyling(tabs[i].parentNode);
+    
     };
   }
   return;
 }
 
-// Define function to update all tabs' styling each time any tab is clicked
+// Define function to apply styling to the active tab
+
 let buttons = document.querySelectorAll(".btn");
 
 let updateTabStyling = (clickedTab) => {
+
   for (let i = 0; i < buttons.length; i++) {
+
     buttons[i].classList.remove('active');
-    if (buttons[i] === clickedTab)
-      console.log("current tab: ", buttons[i], "clicked tab: ", clickedTab);
+    
+    if (buttons[i] === clickedTab) {
       buttons[i].classList.add('active');
+    }
   }
 };
 
 // When a tab is clicked, call toggleBoxesDisplayed() to determine which boxes are displayed
+
 toggleBoxesDisplayed();
 
 /* -------------------------------------------------- */
