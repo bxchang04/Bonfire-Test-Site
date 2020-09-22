@@ -37,14 +37,28 @@
 		</header>
 		<!-- End: Header -->
 
-    <form class="displayTabs" id="displayTabs">
-      <input type="radio" name="toggleBoxes" value="all" />
-      <label for="showAll">SHOW ALL</label>
-      <input type="radio" name="toggleBoxes" value="even" />
-      <label for="showEven">SHOW EVEN</label>
-      <input type="radio" name="toggleBoxes" value="odd" />
-      <label for="showOdd">SHOW ODD</label>
-    </form> 
+		<!-- Begin: Tabs -->
+		<div class="tabs-sticky">
+			<div class="tabs">
+				<form class="tabs__form" id="displayTabs">
+					<label class="btn active">
+						<input type="radio" class="sr-only" name="toggleBoxes" id="showAll" value="all" checked>
+						Show all
+					</label>
+
+					<label class="btn">
+						<input type="radio" class="sr-only" name="toggleBoxes" id="showEven" value="even">
+						Show even
+					</label>
+
+					<label class="btn">
+						<input type="radio" class="sr-only" name="toggleBoxes" id="showOdd" value="odd">
+						Show odd
+					</label>
+				</form>
+			</div>
+	   </div>
+		<!-- End: Tabs -->
 
     <!-- Begin: Main Content -->
     <main class="container">
