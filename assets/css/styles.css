@@ -171,38 +171,38 @@ a {
   display: flex;
   flex-direction: column;
   padding: 1.75rem;
-  border-top: .1875rem solid transparent;
-  border-bottom: 0.125rem solid rgba(0,50,100,.13);
-  border-radius: .1875rem;
-  box-shadow: 0 0 .5rem rgba(0,0,0,.05);
+  border-top: 0.1875rem solid transparent;
+  border-bottom: 0.125rem solid rgba(0, 50, 100, 0.13);
+  border-radius: 0.1875rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.05);
   background-color: var(--white);
   text-align: center;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .box__title {
-  margin: 3rem 0 .875rem;
+  margin: 3rem 0 0.875rem;
   text-transform: uppercase;
   color: var(--gray);
   font-weight: 400;
   font-size: 1.875rem;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .box__subtext {
   margin: 0 0 2.25rem;
-  font-size: .875rem;
-  letter-spacing: .0625em;
+  font-size: 0.875rem;
+  letter-spacing: 0.0625em;
   text-transform: uppercase;
   color: var(--dark);
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .box__button {
   margin: auto 0 0;
   opacity: 0;
   font-weight: 700;
-  transition: all .15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .box:hover,
@@ -227,4 +227,24 @@ a {
 .box:hover .box__button,
 .box:focus .box__button {
   opacity: 1;
+}
+
+/* new */
+/* IE10+ CSS styles go here */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* Start: Grid Fallback */
+  header {
+    color: white;
+  }
+
+  .tabs {
+    background-color: white;
+  }
+
+  .box {
+    display: inline-block;
+    width: 33%;
+    color: gray;
+  }
+  /* End: Grid Fallback */
 }
