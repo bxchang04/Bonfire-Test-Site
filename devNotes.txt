@@ -1,4 +1,0 @@
-Case Study Notes:
-For the buttons, I each grid element clickable in their entirety, instead of only making the 'View Case Study' buttons clickable.
-As hinted by the photoshop specs, this gives the user larger targets to click/tap, when compared to the smaller 'View Case Study' buttons). 
-This leads to a more streamlined user experience and fewer wasted clicks/taps.

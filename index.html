@@ -11,171 +11,113 @@
       href="./assets/img/bxc_favicon.png"
       type="image/x-icon"
     />
-    <!-- ADD THIS and optimize -->
+
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- add Sass -->
   </head>
 
   <body>
-    <!-- header -->
-    <header class="header__wrapper">
-      <!-- test nav -->
-      <!-- <div class="menu_container">
-			<div class="menu_item">
-				<p>Logo</p>
+		<!-- Begin: Header -->
+		<header class="header">
+			<div class="container">
+				<div class="top">
+					<a href="#" class="top__logo" title="Home"><img src="assets/img/logo.png" alt="Logo Design"/></a>
+
+					<!-- Begin: Nav -->
+					<nav class="nav">
+						<a href="#" class="nav__item active">Home</a>
+						<a href="#" class="nav__item">Away</a>
+					</nav>
+					<!-- End: Nav -->
+				</div>
+				<h1 class="header__title">Why Hello There</h1>
+				<p class="header__lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et</p>
 			</div>
-			<div class="menu_item">
-				<nav>
-					<ul>
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="./about.html">About</a>
-						</li>
-						<li>
-							<a href="#">Services</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-					</ul>
-				</nav>
+		</header>
+		<!-- End: Header -->
+
+		<!-- Begin: Tabs -->
+		<div class="tabs-sticky">
+			<div class="tabs">
+				<form class="tabs__form" id="displayTabs">
+					<label class="btn active">
+						<input type="radio" class="sr-only" name="toggleBoxes" id="showAll" value="all" checked>
+						Show all
+					</label>
+
+					<label class="btn">
+						<input type="radio" class="sr-only" name="toggleBoxes" id="showEven" value="even">
+						Show even
+					</label>
+
+					<label class="btn">
+						<input type="radio" class="sr-only" name="toggleBoxes" id="showOdd" value="odd">
+						Show odd
+					</label>
+				</form>
 			</div>
-    </div> -->
-      <!-- end test nav -->
+	   </div>
+		<!-- End: Tabs -->
 
-      <!-- nav -->
-      <nav>
-        <ul class="menu" role="menubar">
-          <li class="logo" role="presentation">
-            <img src="assets/img/logo.png" role="menuitem" alt="LOGODESIGN" />
-          </li>
-          <li class="item" role="presentation">
-            <a href="#" role="menuitem">Home</a>
-          </li>
-          <li class="item" role="presentation">
-            <a href="#" role="menuitem">Away</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- end nav -->
-
-      <h1 class="header__title">Why Hello There</h1>
-      <p class="header__text">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et
-      </p>
-    </header>
-    <!-- end header -->
-
-    <!-- main content -->
-    <main>
-      <form class="displayTabs" id="displayTabs">
-        <input type="radio" name="toggleBoxes" value="all" />
-        <label for="showAll">SHOW ALL</label>
-        <input type="radio" name="toggleBoxes" value="even" />
-        <label for="showEven">SHOW EVEN</label>
-        <input type="radio" name="toggleBoxes" value="odd" />
-        <label for="showOdd">SHOW ODD</label>
-      </form>
+    <!-- Begin: Main Content -->
+    <main class="container">
       <section class="boxes">
-        <div class="grid">
-          <!-- grid items live here -->
-          <div id="grid__box1" class="grid__item">
-            <h2>BOX NUMBER 1</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="case-study">VIEW THE CASE STUDY</div>
+        <a href="#" id="box1" class="box">
+          <h2 class="box__title">Box number 1</h2>
+          <p class="box__subtext">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
 
-          <div id="grid__box2" class="grid__item">
-            <h2>BOX NUMBER 2</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="case-study">VIEW THE CASE STUDY</div>
+        <a href="#" class="box">
+          <h2 class="box__title">Box number 2</h2>
+          <p class="box__subtext">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
 
-          <div id="grid__box3" class="grid__item">
-            <h2>BOX NUMBER 3</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="case-study">VIEW THE CASE STUDY</div>
+        <a href="#" class="box">
+          <h2 class="box__title">Box number 3</h2>
+          <p class="box__subtext">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
 
-          <div id="grid__box4" class="grid__item">
-            <h2>BOX NUMBER 4</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="case-study">VIEW THE CASE STUDY</div>
+        <a href="#" class="box">
+          <h2 class="box__title">Box number 4</h2>
+          <p class="box__subtext">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
 
-          <div id="grid__box5" class="grid__item">
-            <h2>BOX NUMBER 5</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="case-study">VIEW THE CASE STUDY</div>
+        <a href="#" class="box">
+          <h2 class="box__title">Box number 5</h2>
+          <p class="box__subtext">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
           </div>
+        </a>
+        
+        <a href="#" id="box2" class="box">
+          <h2 class="box__title">Box number 6</h2>
+          <p class="box__subtext">Useless subtext</p>
+          <div class="box__button btn">
+            View the case study
+          </div>
+        </a>
 
-          <div id="grid__box6" class="grid__item">
-            <h2>BOX NUMBER 6</h2>
-            <p>USELESS SUBTEXT</p>
-            <div class="case-study">VIEW THE CASE STUDY</div>
-          </div>
         </div>
       </section>
     </main>
-    <!-- end main content -->
+    <!-- End: Main Content -->
 
-    <!-- JS -->
+    <!-- Begin: JS -->
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/tota11y.min.js"></script>
-    <!-- end JS -->
+    <!-- End: JS -->
   </body>
 </html>
-
-<!-- 
-    NOTES:
-    Pay attention to mouse over and animations--esp case studies!
-      Mouse over red line, focus, view case study button w/ href #
-    Pay attention to link colors
-    SASS!
-    CSS Grid and Grid fallback
-    IE conflicts/compatability (autoprefixer)
-    
-    FONT!
-    ColorPicker and color matching. TURN OFF NIGHT LIGHT
- 
-    MINIFY!!
-    Clean up comments
-    Upload to private repo on GH
-    Host on private Domain (ask JV)
-    accessibilty -- aria
-    image optimization -- favicon, header.
-    Test speed
-    Cross site testing
-    Check rest of CF
-
-/* Styling CSS grid*/
-/* Work Page */
-.work_section {
-  padding: 50px;
-}
-
-/* Grid fallback*/
-.grid__item {
-  display: inline-block;
-  width: 50%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /*add 1 more fr as needed*/
-  grid-gap: 20px;
-}
-
-.grid__item {
-  background-color: LightGrey;
-  padding: 10px;
-  /* Set width to auto*/
-  width: auto;
-}
-      -->
