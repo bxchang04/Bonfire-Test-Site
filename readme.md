@@ -16,7 +16,7 @@ Take the attached photoshop document and turn it into a single working web page.
 
 > The final page should work across all screen sizes from a full width desktop down to mobile
 
-> The final page should work across modern versions of Chrome, Firefox, and Safari. IE can suck it, but we should at least determine if there are any major conflicts in IE 11 and Edge
+> The final page should work across modern versions of Chrome, Firefox, and Safari. IE is not needed, but we should at least determine if there are any major conflicts in IE 11 and Edge
 
 > The tabs that say “all”, “even”, and “odd” should show/hide the appropriate boxes below. It should start off with “all” selected and all boxes showing.
 
